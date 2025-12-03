@@ -3,68 +3,77 @@
 This project was created as part of a university assignment.
 The task was to build a simple Python GUI application that:
 
-accepts two numerical inputs (N and T)
+accepts two numerical inputs (N and T),
 
-generates N random numbers in the range 1–200
+generates N random numbers in the range 1–200,
 
-replaces every T-th number with 0
+replaces every T-th number with 0,
 
-displays the modified output
+displays the modified sequence,
 
-draws a bar graph of the resulting values
+draws a bar graph of the resulting values,
 
-includes a graphical user interface (GUI) using Tkinter
+uses a graphical user interface (GUI) with Tkinter,
 
-can be converted into an .exe application
+can be converted into an .exe application.
 
 🚀 How the program works
 1️⃣ Input
 
 The user enters:
 
-N — amount of numbers to generate
+N – how many numbers to generate,
 
-T — interval for replacing numbers with zero
+T – interval for replacing numbers with zero (every T-th element becomes 0).
 
 2️⃣ Processing
 
-The program generates a list of N random integers (1–200).
+The program generates a list of N random integers in the range 1–200.
 
-Every T-th element is replaced with 0.
+Every T-th element (T, 2T, 3T, …) is replaced with 0.
 
 3️⃣ Output
 
-The resulting sequence is shown in a text window.
+The resulting sequence is displayed in a text window.
 
-A bar chart is generated using Matplotlib and embedded into Tkinter.
+A bar chart is generated using Matplotlib and embedded into the Tkinter window.
 
-📁 Project Structure
+📁 Project structure
 project-folder/
-├── main.py           # main application script
-├── README.txt        # documentation
-└── .gitignore        # ignored files for Git
+├── main.py      # main application script (Python source)
+├── main.exe     # built executable (PyInstaller)
+├── README.txt   # documentation
+└── .gitignore   # Git ignore rules
 
-🛠 Technologies Used
+🛠 Technologies used
 
 Python 3.x
 
-Tkinter — GUI framework
+Tkinter – GUI framework
 
-Matplotlib — graph rendering library
+Matplotlib – graph rendering library
 
-Random — number generation
+random – number generation
 
-PyInstaller — for building the .exe file
+PyInstaller – building the .exe file
 
 ▶️ How to run
-Run from Python:
+Run from Python (source code)
 python main.py
 
-Build .exe (optional):
+Run compiled executable
+
+Double-click main.exe in the project folder
+(no Python installation required on the target machine).
+
+Build .exe from source (optional)
+
+If you want to rebuild the executable:
+
 pyinstaller --onefile --noconsole main.py
 
 
-The executable will appear in the dist/ folder.
+The new executable will appear in the dist/ folder.
 
 📌 Author
 
