@@ -1,0 +1,15 @@
+# virtual env
+.venv/
+venv/
+
+# pycache
+__pycache__/
+
+# pyinstaller
+dist/
+build/
+*.spec
+
+# IDE
+.idea/
+*.iml
